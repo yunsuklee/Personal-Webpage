@@ -21,11 +21,11 @@
 	</head>
 	<body>
 		<header>
-			<nav id="navbar">
-				<figure>
-					<img id="icon" src="./images/SL.png"a lt="SL icon">
+			<nav class="nav">
+				<figure class="nav__icon--container">
+					<img class="nav__icon" src="./images/SL.png"a lt="SL icon">
 				</figure>	
-				<ul class="nav_link--list">
+				<ul class="nav__link--list">
 					<li class="nav__link">
 						<a class="nav__link--anchor link__hover-effect link__hover-effect--white" href="#">About</a>
 					</li>
@@ -45,37 +45,37 @@
 		</header>
 		<main>
 			<section id="welcome-section">
-				<div id="introduction">
-					<h1 id="introduction-title">
+				<div class="landing">
+					<h1 class="landing__title">
 						Hey,<br>
 						I'm <span class="colored">Sergio</span>
 					</h1>
-					<p class="description">A <span class="colored2">Frontend Developer</span> with strong orientation towards user experiences.</p>
-					<p class="description">Here's a bit more <a href="#" class="colored2">about me.</a></p>
-					<ul>
-						<li class="enlarge">
-							<a href="https://linkedin.com/in/yunsuklee" target="_blank">
+					<p class="landing__description">A <span class="colored2">Frontend Developer</span> with strong orientation towards user experiences.</p>
+					<p class="landing__description">Here's a bit more <a href="#" class="colored2">about me.</a></p>
+					<ul class="landing__link--list">
+						<li class="landing__link enlarge">
+							<a class="landing__link--anchor" href="https://linkedin.com/in/yunsuklee" target="_blank">
 								<i class="fa-brands fa-linkedin"></i>
 							</a>
 						</li>
-						<li class="enlarge">
-							<a href="https://github.com/yunsuklee" target="_blank">
+						<li class="landing__link enlarge">
+							<a class="landing__link--anchor" href="https://github.com/yunsuklee" target="_blank">
 								<i class="fa-brands fa-github"></i>
 							</a>
 						</li>
 						<li>
-							<img class="enlarge" src="./images/united-kingdom.png" alt="English">
+							<img class="landing__img enlarge" src="./images/united-kingdom.png" alt="English">
 						</li>
 						<li>
-							<img class="enlarge" src="./images/spain.png" alt="Spanish">
+							<img class="landing__img enlarge" src="./images/spain.png" alt="Spanish">
 						</li>
 						<li>
-							<img class="enlarge" src="./images/south-korea.png"	alt="Korean">
+							<img class="landing__img enlarge" src="./images/south-korea.png" alt="Korean">
 						</li>
 					</ul>
 				</div>
-				<figure>
-					<img class="enlarge" id="portrait" src="./images/portrait.jpeg" alt="Portrait picture">
+				<figure class="landing__portrait--container">
+					<img class="landing__portrait enlarge" src="./images/portrait.jpeg" alt="Portrait picture">
 				</figure>
 			</section>
 			<section id="projects">
