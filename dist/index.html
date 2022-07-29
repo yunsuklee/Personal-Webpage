@@ -10,7 +10,7 @@
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="./styles/styles.css"
+			href="./styles/main.css"
 		/>
 		<link
 			rel="stylesheet"
@@ -21,7 +21,7 @@
 			crossorigin="anonymous">
 		</script>
 		<script>
-			src="./dist/main.js"
+			src="main.js"
 		</script>
 		<title>Personal Portfolio</title>
 	</head>
@@ -43,40 +43,40 @@
 					</li>
 					<li class="nav__link enlarge">
 						<a class="nav__link--anchor" href="#">
-							<i id="moon" class="fa-solid fa-moon"></i> 
+							<i class="nav__link--icon" class="fa-solid fa-moon"></i> 
 						</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
-			<section id="welcome-section">
+			<section class="welcome-section">
 				<div class="landing">
 					<h1 class="landing__title">
 						Hey,<br>
 						I'm <span class="colored">Sergio</span>
 					</h1>
-					<p class="landing__description">A <span class="colored2">Frontend Developer</span> with strong orientation towards user experiences.</p>
-					<p class="landing__description">Here's a bit more <a href="#" class="colored2">about me.</a></p>
+					<p class="landing__description">A <span class="colored-2">Frontend Developer</span> with strong orientation towards user experiences.</p>
+					<p class="landing__description">Here's a bit more <a href="#" class="colored-2">about me.</a></p>
 					<ul class="landing__link--list">
 						<li class="landing__link enlarge">
 							<a class="landing__link--anchor" href="https://linkedin.com/in/yunsuklee" target="_blank">
-								<i class="fa-brands fa-linkedin"></i>
+								<i class="landing__link--icon fa-brands fa-linkedin"></i>
 							</a>
 						</li>
 						<li class="landing__link enlarge">
 							<a class="landing__link--anchor" href="https://github.com/yunsuklee" target="_blank">
-								<i class="fa-brands fa-github"></i>
+								<i class="landing__link--icon fa-brands fa-github"></i>
 							</a>
 						</li>
-						<li>
-							<img class="landing__img enlarge" src="./images/united-kingdom.png" alt="English">
+						<li class="landing__link">
+							<img class="landing__link--img enlarge" src="./images/united-kingdom.png" alt="English">
 						</li>
-						<li>
-							<img class="landing__img enlarge" src="./images/spain.png" alt="Spanish">
+						<li class="landing__link">
+							<img class="landing__link--img enlarge" src="./images/spain.png" alt="Spanish">
 						</li>
-						<li>
-							<img class="landing__img enlarge" src="./images/south-korea.png" alt="Korean">
+						<li class="landing__link">
+							<img class="landing__link--img enlarge" src="./images/south-korea.png" alt="Korean">
 						</li>
 					</ul>
 				</div>
@@ -84,14 +84,14 @@
 					<img class="landing__portrait enlarge" src="./images/portrait.jpeg" alt="Portrait picture">
 				</figure>
 			</section>
-			<section id="projects">
-				<h2 id="projects-title">
+			<section class="projects-section" id="projects">
+				<h2 class="projects-section__title">
 					These are some of my 
 					<span class="colored">projects</span>
 				</h2>
-				<div id="projects-container">
+				<div class="projects-section__container">
 					<div class="project-tile shadow ">
-						<a href="./projects/survey.html" target="_blank">
+						<a class="project" href="./projects/survey.html" target="_blank">
 							<img src="./images/project1.png" class="project__img">
 							<div class="project-tile--fog"></div>
 							<div class="project__description">
@@ -102,7 +102,7 @@
 						</a>
 					</div>
 					<div class="project-tile shadow">
-						<a href="./projects/tech.html" target="_blank">
+						<a class="project" href="./projects/tech.html" target="_blank">
 							<img src="./images/project2.png" class="project__img">
 							<div class="project-tile--fog"></div>
 							<div class="project__description">
@@ -113,7 +113,7 @@
 						</a>
 					</div>
 					<div class="project-tile shadow">
-						<a href="./projects/product.html" target="_blank">
+						<a class="project" href="./projects/product.html" target="_blank">
 							<img src="./images/project3.png" class="project__img">
 							<div class="project-tile--fog"></div>
 							<div class="project__description">
@@ -124,7 +124,7 @@
 						</a>
 					</div>
 					<div class="project-tile shadow">
-						<a href="./projects/index12.html" target="_blank">
+						<a class="project" href="./projects/index12.html" target="_blank">
 							<img src="./images/project4.png" class="project__img">
 							<div class="project-tile--fog"></div>
 							<div class="project__description">
@@ -137,36 +137,36 @@
 				</div>
 			</section>
 		</main>
-		<footer>
+		<footer class="foooter">
 			<img class="footer__img" src="./images/SL-footer.png" alt="SL icon">
-			<ul>
+			<ul class="footer__link--list">
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="https://linkedin.com/in/yunsuklee" target="_blank">
-						<i class="fa-brands fa-linkedin"></i>Linkedin
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="https://linkedin.com/in/yunsuklee" target="_blank">
+						<i class="footer__link--icon fa-brands fa-linkedin"></i>Linkedin
 					</a>
 				</li>
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="https://github.com/yunsuklee" target="_blank">
-						<i class="fa-brands fa-github"></i>Github
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="https://github.com/yunsuklee" target="_blank">
+						<i class="footer__link--icon fa-brands fa-github"></i>Github
 					</a>
 				</li>
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="#">
-						<i class="fa-solid fa-envelope"></i>Contact
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="#">
+						<i class="footer__link--icon fa-solid fa-envelope"></i>Contact
 					</a>
 				</li>
 				<br>
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="#">English Resume</a>
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="#">English Resume</a>
 				</li>
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="#">Spanish Resume</a>
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="#">Spanish Resume</a>
 				</li>
 				<li class="footer__link">
-					<a class="link__hover-effect link__hover-effect--red" href="#">Korean Resume</a>
+					<a class="footer__link--anchor link__hover-effect link__hover-effect--red" href="#">Korean Resume</a>
 				</li>
 			</ul>
-			<p>Copyright <i class="fa-regular fa-copyright"></i> Sergio Yunsuk Lee</p>
+			<p class="footer__paragraph">Copyright <i class="footer__paragraph--icon fa-regular fa-copyright"></i> Sergio Yunsuk Lee</p>
 		</footer>
 	</body>
 </html>
