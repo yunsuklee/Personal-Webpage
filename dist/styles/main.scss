@@ -1,5 +1,7 @@
 @import 'variables';
+@import 'effects';
 @import 'navbar';
+@import 'landing';
 
 * {
   margin: 0;
@@ -27,4 +29,13 @@ li {
 p {
   line-height: 1.5;
   font-size: 16px;
+}
+
+.colored {
+  color: $colored-class;
+}
+
+.colored-2 {
+  color: $navbar-color;
+  text-decoration: none;
 }

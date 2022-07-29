@@ -1,3 +1,238 @@
+/*
+
+    VARIABLES
+
+*/
+/*
+
+    EFFECTS
+
+*/
+.link__hover-effect {
+  position: relative;
+}
+
+.link__hover-effect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  right: 0;
+  width: 0;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+  background-color: #FFF;
+}
+
+.link__hover-effect--red:after {
+  background-color: #FF5964;
+}
+
+.link__hover-effect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.nav__link--icon {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.nav__link--icon:hover {
+  color: #112C49;
+  -webkit-animation: mode 2s ease-out;
+          animation: mode 2s ease-out;
+}
+
+@-webkit-keyframes mode {
+  0% {
+    color: #FFF;
+  }
+  25% {
+    color: #112C49;
+  }
+}
+
+@keyframes mode {
+  0% {
+    color: #FFF;
+  }
+  25% {
+    color: #112C49;
+  }
+}
+
+.enlarge {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.enlarge:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.enlarge:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+/*
+
+    NAVBAR
+
+*/
+.nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  background-color: #FF5964;
+  width: 100%;
+  height: 65px;
+  line-height: 65px;
+  -webkit-box-shadow: 5px 5px 5px #112C49;
+          box-shadow: 5px 5px 5px #112C49;
+  border-bottom: 2px solid #112C49;
+}
+
+.nav__icon {
+  margin-top: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60px;
+}
+
+.nav__link--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link--list .nav__link {
+  margin: 0 20px;
+}
+
+.nav__link--list .nav__link .nav__link--anchor {
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFF;
+}
+
+/*
+
+    WELCOME
+
+*/
+.welcome-section {
+  position: absolute;
+  top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: calc(100vh - 65px);
+  background-color: #38618C;
+  color: #FFF;
+}
+
+.landing__introduction {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+.landing__portrait {
+  display: inline-block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 400px;
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 10px 8px 10px #112C49;
+          box-shadow: 5px 10px 8px 10px #112C49;
+  margin-left: 5%;
+}
+
+.landing__link--list {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.lanidng__link {
+  background-color: #FFE74C;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.landing__link--icon {
+  color: #112C49;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.landing__portrait--img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+}
+
+.landing__title {
+  font-size: 100px;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 30px;
+}
+
+.landgin__description {
+  color: #FFF;
+  font-size: 26px;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: left;
+  width: 450px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,5 +260,14 @@ li {
 p {
   line-height: 1.5;
   font-size: 16px;
+}
+
+.colored {
+  color: #FFE74C;
+}
+
+.colored-2 {
+  color: #FF5964;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
