@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=decive-width, initial-scale=1.0">
+		<link
+			rel="icon"
+			href="./images/SL.png"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./styles/styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+		/>
+		<script 
+			src="https://kit.fontawesome.com/3f22ddb65b.js" 
+			crossorigin="anonymous">
+		</script>
+		<script>
+			src="./dist/main.js"
+		</script>
+		<title>Personal Portfolio</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<figure class="nav__icon--container">
+					<img class="nav__icon" src="./images/SL.png"a lt="SL icon">
+				</figure>	
+				<ul class="nav__link--list">
+					<li class="nav__link">
+						<a class="nav__link--anchor link__hover-effect link__hover-effect--white" href="#">About</a>
+					</li>
+					<li class="nav__link">
+						<a class="nav__link--anchor link__hover-effect link__hover-effect--white" href="#projects">Work</a>
+					</li>
+					<li class="nav__link">
+						<a class="nav__link--anchor link__hover-effect link__hover-effect--white" href="#">Contact</a>
+					</li>
+					<li class="nav__link enlarge">
+						<a class="nav__link--anchor" href="#">
+							<i id="moon" class="fa-solid fa-moon"></i> 
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="welcome-section">
+				<div class="landing">
+					<h1 class="landing__title">
+						Hey,<br>
+						I'm <span class="colored">Sergio</span>
+					</h1>
+					<p class="landing__description">A <span class="colored2">Frontend Developer</span> with strong orientation towards user experiences.</p>
+					<p class="landing__description">Here's a bit more <a href="#" class="colored2">about me.</a></p>
+					<ul class="landing__link--list">
+						<li class="landing__link enlarge">
+							<a class="landing__link--anchor" href="https://linkedin.com/in/yunsuklee" target="_blank">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</li>
+						<li class="landing__link enlarge">
+							<a class="landing__link--anchor" href="https://github.com/yunsuklee" target="_blank">
+								<i class="fa-brands fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<img class="landing__img enlarge" src="./images/united-kingdom.png" alt="English">
+						</li>
+						<li>
+							<img class="landing__img enlarge" src="./images/spain.png" alt="Spanish">
+						</li>
+						<li>
+							<img class="landing__img enlarge" src="./images/south-korea.png" alt="Korean">
+						</li>
+					</ul>
+				</div>
+				<figure class="landing__portrait--container">
+					<img class="landing__portrait enlarge" src="./images/portrait.jpeg" alt="Portrait picture">
+				</figure>
+			</section>
+			<section id="projects">
+				<h2 id="projects-title">
+					These are some of my 
+					<span class="colored">projects</span>
+				</h2>
+				<div id="projects-container">
+					<div class="project-tile shadow ">
+						<a href="./projects/survey.html" target="_blank">
+							<img src="./images/project1.png" class="project__img">
+							<div class="project-tile--fog"></div>
+							<div class="project__description">
+								<h3 class="project__description--title">Survey Form</h3>
+								<h4 class="project__description--subtitle">HTML, CSS</h4>
+								<p class="project__description--paragraph">A retro styled survey form using HTML forms, inputs and validations.</p>
+							</div>
+						</a>
+					</div>
+					<div class="project-tile shadow">
+						<a href="./projects/tech.html" target="_blank">
+							<img src="./images/project2.png" class="project__img">
+							<div class="project-tile--fog"></div>
+							<div class="project__description">
+								<h3 class="project__description--title">JavaScript Technical Documentation Page</h3>
+								<h4 class="project__description--subtitle">HTML, CSS</h4>
+								<p class="project__description--paragraph">A responsive technical documentation page with an easy to use interface.</p>
+							</div>
+						</a>
+					</div>
+					<div class="project-tile shadow">
+						<a href="./projects/product.html" target="_blank">
+							<img src="./images/project3.png" class="project__img">
+							<div class="project-tile--fog"></div>
+							<div class="project__description">
+								<h3 class="project__description--title">Product Landing Page</h3>
+								<h4 class="project__description--subtitle">HTML, CSS</h4>
+								<p class="project__description--paragraph">A modern and well-designed landing page using grid and flexbox practices.</p>
+							</div>
+						</a>
+					</div>
+					<div class="project-tile shadow">
+						<a href="./projects/index12.html" target="_blank">
+							<img src="./images/project4.png" class="project__img">
+							<div class="project-tile--fog"></div>
+							<div class="project__description">
+								<h3 class="project__description--title">City Skyline</h3>
+								<h4 class="project__description--subtitle">HTML, CSS</h4>
+								<p class="project__description--paragraph">A fully responsive portrait of a city, using borders to create peculiar edges.</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<img class="footer__img" src="./images/SL-footer.png" alt="SL icon">
+			<ul>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="https://linkedin.com/in/yunsuklee" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>Linkedin
+					</a>
+				</li>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="https://github.com/yunsuklee" target="_blank">
+						<i class="fa-brands fa-github"></i>Github
+					</a>
+				</li>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="#">
+						<i class="fa-solid fa-envelope"></i>Contact
+					</a>
+				</li>
+				<br>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="#">English Resume</a>
+				</li>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="#">Spanish Resume</a>
+				</li>
+				<li class="footer__link">
+					<a class="link__hover-effect link__hover-effect--red" href="#">Korean Resume</a>
+				</li>
+			</ul>
+			<p>Copyright <i class="fa-regular fa-copyright"></i> Sergio Yunsuk Lee</p>
+		</footer>
+	</body>
+</html>
